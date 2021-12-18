@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display';
+    width: 100vw;
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    transform: scale(0.8);
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: center;
+    filter: drop-shadow(0 20px 15px hsla(245, 75%, 52%, 0.1));
+    margin: auto;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    font-size: 22px;
+    width: 75%;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.annual-container {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(225, 100%, 98%);
+    width: 85%;
+    margin: 40px auto 40px;
+    border-radius: 15px;
+    padding: 15px 0;
+    align-content: center;
+}
+
+.annual-content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.annual {
+    font-size: 20px;
+}
+
+.annual-content p {
+    margin-top: -13px;
+    font-size: 20px;
+}
+
+.music-icon {
+    height: 70px;
+    width: 70px;
+    margin: auto 30px auto 25px;
+}
+
+.annual-wrapper {
+    display: flex;
+}
+
+h1, h2 {
+    font-weight: 900;
+}
+
+.header {
+    margin-top: 45px;
+}
+
+.header, .annual {
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.link {
+    text-decoration: underline;
+    color:hsl(245, 75%, 52%);
+    font-weight: 700;
+    margin: auto;
+    font-size: 18px;
+    position: relative;
+    left: calc(120px - 25px);
+}
+
+.link::after {
+    color: purple;
+    cursor: pointer;
+}
+
+.button {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    color: #fff;
+    width: 85%;
+    border: none;
+    padding: 5px 0;
+    filter: drop-shadow(0 18px 10px hsla(245, 75%, 52%, 0.2));
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+}
+
+.cancel {
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin: 35px auto 55px;
+}
