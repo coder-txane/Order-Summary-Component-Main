@@ -1,10 +1,15 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Red Hat Display';
-    width: 100vw;
+}
+
+body {
+    background-image: url("../images/pattern-background-desktop.svg");
     background-color: hsl(225, 100%, 94%);
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .container {
@@ -15,11 +20,11 @@ html, body {
     text-align: center;
     filter: drop-shadow(0 20px 15px hsla(245, 75%, 52%, 0.1));
     margin: auto;
+    width: 450px;
 }
 
-.container-wrapper {
-    display: flex;
-    flex-direction: column;
+.image {
+    width: 100%;
 }
 
 .description {
@@ -31,19 +36,19 @@ html, body {
 
 .annual-container {
     display: flex;
-    flex-direction: row;
     background-color: hsl(225, 100%, 98%);
     width: 85%;
     margin: 40px auto 40px;
     border-radius: 15px;
     padding: 15px 0;
-    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .annual-content {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin: auto;
 }
 
@@ -66,6 +71,17 @@ html, body {
     display: flex;
 }
 
+.link {
+    text-decoration: underline;
+    color:hsl(245, 75%, 52%);
+    font-weight: 700;
+    margin: auto;
+    font-size: 18px;
+    justify-self: center;
+    position: relative;
+    left: calc(76px - 25px);
+}
+
 h1, h2 {
     font-weight: 900;
 }
@@ -82,16 +98,6 @@ p {
     font-size: 16px;
     color: hsl(224, 23%, 55%);
     font-weight: 500;
-}
-
-.link {
-    text-decoration: underline;
-    color:hsl(245, 75%, 52%);
-    font-weight: 700;
-    margin: auto;
-    font-size: 18px;
-    position: relative;
-    left: calc(120px - 25px);
 }
 
 .link::after {
