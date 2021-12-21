@@ -72,14 +72,17 @@ body {
 }
 
 .link {
-    text-decoration: underline;
     color:hsl(245, 75%, 52%);
     font-weight: 700;
     margin: auto;
     font-size: 18px;
     justify-self: center;
     position: relative;
-    left: calc(76px - 25px);
+    left: calc(159px - 50px);
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 h1, h2 {
@@ -100,10 +103,6 @@ p {
     font-weight: 500;
 }
 
-.link::after {
-    color: purple;
-    cursor: pointer;
-}
 
 .button {
     background-color: hsl(245, 75%, 52%);
@@ -111,14 +110,27 @@ p {
     color: #fff;
     width: 80%;
     border: none;
-    padding: 5px 0;
+    padding: 3px 0;
     filter: drop-shadow(0 18px 10px hsla(245, 75%, 52%, 0.2));
     font-family: 'Red Hat Display';
     font-weight: 500;
+    transition: background-color 0.2s ease-out;
+}
+
+.button:hover {
+    background-color:hsl(223, 47%, 23%);
+
 }
 
 .cancel {
     color:hsl(224, 23%, 55%);
     font-weight: 700;
     margin: 35px auto 55px;
+    font-size: 1.2em;
+    transition: color 0.1s ease-out;
+    display: inline-block;
+}
+
+.cancel:hover {
+    color:hsla(224, 23%, 55%, 0.5)
 }
