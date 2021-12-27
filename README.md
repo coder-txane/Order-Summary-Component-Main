@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: This is my [solution](https://github.com/coder-txane/Order-Summary-Component-Main.git)
+- Solution URL: This is my [solution](https://www.frontendmentor.io/solutions/order-summary-component-challenge-hub-H0vr9g0hw)
 - Live Site URL: This is the [live site](https://your-live-site-url.com)
 
 ## My process
